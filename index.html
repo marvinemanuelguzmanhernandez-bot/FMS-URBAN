@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FMS URBAN</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/FMS (1).png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Barra de navegacion superior -->
+    <header>
+        <nav class="navbar">
+            <a class="nav-logo" href="#">
+                <img class="logo-img" src="assets/img/FMS (1).png" alt="logo">
+            </a>
+   
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#hero" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#sneakers" class="nav-link">Tenis</a></li>
+                <li class="nav-item"><a href="#camisas" class="nav-link">Camisas</a></li>
+                <li class="nav-item"><a href="#sueteres" class="nav-link">Sueteres</a></li>
+                <li class="nav-item"><a href="#busos" class="nav-link">Busos</a></li>
+                <li class="nav-item"><a href="#pantalones" class="nav-link">Pantalones</a></li>
+                <li class="nav-item"><a href="#contactanos" class="nav-link">Contactanos</a></li>
+                <li class="nav-item">
+            <!-- Boton del carrito en la barra de navegacion -->
+                    <a href="#" id="btn-ver-carrito" class="nav-link cart-btn-nav">
+                        <i class="fas fa-shopping-cart"></i> (<span id="contador-carrito">0</span>)
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seccion de inicio con tenis flotante y giro 360 -->
+        <section id="hero" class="hero">
+            <video autoplay muted loop>
+                <source src="assets/video/5.mp4" type="video/mp4">
+                </video>
+            <div class="hero-content">
+
+                <div class="text-container">
+                    <h1 class="main-text">Estilo Urbano Sin Limites</h1>
+                    <p class="description">Disenos exclusivos, maxima comodidad y actitud callejera. Viste con la fuerza y elegancia del estilo urbano.</p>
+                    <a href="#sneakers" class="scroll-down-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <a href="#sneakers" class="btn">Ver Coleccion</a>
+                </div>
+    
+                <div class="hero-image-container">
+                    <div class="floating-wrapper">
+                        <img src="assets/img/nike-cortes.png" alt="Tenis Nike Cortez" class="hero-image floating-sneaker">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de tenis con 4 elementos -->
+        <section id="sneakers" class="featured-burgers">
+            <h2 class="section-title">Sneakers / Tenis</h2>
+            <div class="burger-cards">
+                <div class="burger-card">
+                    <img src="assets/img/nike-azules.png" alt="Nike Azules" class="burger-img">
+                    <h3>Nike Urban Blue</h3>
+                    <p>Estilo clasico con detalles urbanos modernos.</p>
+                    <span class="price">L. 2,939.55</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(1, 'Nike Urban Blue', 2939.55)">Agregar al carrito</button>
+                </div>
+
+
+                <div class="burger-card">
+                    <img src="assets/img/nike-cortes.png" alt="Nike Cortez" class="burger-img">
+                    <h3>Nike Cortez Classic</h3>
+                    <p>La silueta retro por excelencia para la calle.</p>
+                    <span class="price">L. 2,538.70</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(2, 'Nike Cortez Classic', 2538.70)">Agregar al carrito</button>
+                </div>
+
+
+                <div class="burger-card">
+                    <img src="assets/img/nike-negros.png" alt="Nike Negros" class="burger-img">
+                    <h3>Nike Street Black</h3>
+                    <p>Versatilidad total y diseno minimalista.</p>
+                    <span class="price">L. 2,805.93</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(3, 'Nike Street Black', 2805.93)">Agregar al carrito</button>
+                </div>
+
+
+                <div class="burger-card">
+                    <img src="assets/img/nike-rojos.png" alt="Nike Rojos" class="burger-img">
+                    <h3>Nike Power Red</h3>
+                    <p>Contraste agresivo para destacar en cualquier lugar.</p>
+                    <span class="price">L. 3,073.17</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(4, 'Nike Power Red', 3073.17)">Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de camisas con 4 elementos -->
+        <section id="camisas" class="featured-Offerts">
+            <h2 class="title-offert">Camisas & Playeras</h2>
+            <div class="burger-cards">
+                <div class="burger-card">
+                    <img src="assets/img/camisa1.jpg" alt="Camisa 1" class="burger-img">
+                    <h3>Tee Minimal Tiger</h3>
+                    <p>Algodon premium con corte relajado.</p>
+                    <span class="price">L. 935.31</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(5, 'Tee Minimal Tiger', 935.31)">Agregar al carrito</button>
+                </div>
+
+
+                <div class="burger-card">
+                    <img src="assets/img/camisa2.jpg" alt="Camisa 2" class="burger-img">
+                    <h3>Graphic Street Tee</h3>
+                    <p>Diseno exclusivo en la espalda, estilo oversize.</p>
+                    <span class="price">L. 1,068.93</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(6, 'Graphic Street Tee', 1068.93)">Agregar al carrito</button>
+                </div>
+
+
+                <div class="burger-card">
+                    <img src="assets/img/camisa3.avif" alt="Camisa 3" class="burger-img">
+                    <h3>Raw Mono Tee</h3>
+                    <p>Tonos neutros para un look sofisticado.</p>
+                    <span class="price">L. 1,015.48</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(7, 'Raw Mono Tee', 1015.48)">Agregar al carrito</button>
+                </div>
+
+
+                <div class="burger-card">
+                    <img src="assets/img/camisa4.jpg" alt="Camisa 4" class="burger-img">
+                    <h3>Urban Core Tee</h3>
+                    <p>Esencial diario con costuras reforzadas.</p>
+                    <span class="price">L. 855.14</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(8, 'Urban Core Tee', 855.14)">Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de sueteres con 4 elementos -->
+        <section id="sueteres" class="featured-burgers">
+            <h2 class="section-title">Sueteres & Hoodies</h2>
+            <div class="burger-cards">
+                <div class="burger-card">
+                    <img src="assets/img/sueter1.jpg" alt="Sueter 1" class="burger-img">
+                    <h3>Classic Hoodie Black</h3>
+                    <p>Interior afelpado y gorro de doble capa.</p>
+                    <span class="price">L. 1,737.01</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(9, 'Classic Hoodie Black', 1737.01)">Agregar al carrito</button>
+                </div>
+
+
+                <div class="burger-card">
+                    <img src="assets/img/sueter2.avif" alt="Sueter 2" class="burger-img">
+                    <h3>Overweight Hoodie</h3>
+                    <p>Estructura pesada con caida perfecta.</p>
+                    <span class="price">L. 2,004.24</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(10, 'Overweight Hoodie', 2004.24)">Agregar al carrito</button>
+                </div>
+
+
+                <div class="burger-card">
+                    <img src="assets/img/sueter3.avif" alt="Sueter 3" class="burger-img">
+                    <h3>Street Zip-Up</h3>
+                    <p>Cierre metalico completo y bolsillos tipo canguro.</p>
+                    <span class="price">L. 1,870.62</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(11, 'Street Zip-Up', 1870.62)">Agregar al carrito</button>
+                </div>
+
+
+                <div class="burger-card">
+                    <img src="assets/img/sueter4.avif" alt="Sueter 4" class="burger-img">
+                    <h3>White Tiger Hoodie</h3>
+                    <p>Edicion especial inspirada en la coleccion principal.</p>
+                    <span class="price">L. 2,137.85</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(12, 'White Tiger Hoodie', 2137.85)">Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de busos con 4 elementos -->
+        <section id="busos" class="featured-Offerts">
+            <h2 class="title-offert">Busos Deportivos</h2>
+            <div class="burger-cards">
+                <div class="burger-card">
+                    <img src="assets/img/buso1.avif" alt="Buso 1" class="burger-img">
+                    <h3>Urban Sport Buso</h3>
+                    <p>Comodidad total para entrenar o salir a la calle.</p>
+                    <span class="price">L. 1,336.16</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(13, 'Urban Sport Buso', 1336.16)">Agregar al carrito</button>
+                </div>
+
+                
+                <div class="burger-card">
+                    <img src="assets/img/buso2.avif" alt="Buso 2" class="burger-img">
+                    <h3>Street Track Jacket</h3>
+                    <p>Estilo retro deportivo con cierres reforzados.</p>
+                    <span class="price">L. 1,469.77</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(14, 'Street Track Jacket', 1469.77)">Agregar al carrito</button>
+                </div>
+                
+                
+                <div class="burger-card">
+                    <img src="assets/img/buso3.avif" alt="Buso 3" class="burger-img">
+                    <h3>Heavy Fleece Crew</h3>
+                    <p>Tela gruesa ideal para climas frescos.</p>
+                    <span class="price">L. 1,389.61</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(15, 'Heavy Fleece Crew', 1389.61)">Agregar al carrito</button>
+                </div>
+
+
+                <div class="burger-card">
+                    <img src="assets/img/buso4.avif" alt="Buso 4" class="burger-img">
+                    <h3>Minimalist Sweatshirt</h3>
+                    <p>Diseno limpio y ajuste ergonomico.</p>
+                    <span class="price">L. 1,282.71</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(16, 'Minimalist Sweatshirt', 1282.71)">Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de pantalones con 4 elementos -->
+        <section id="pantalones" class="featured-burgers">
+            <h2 class="section-title">Pantalones Baggy & Cargos</h2>
+            <div class="burger-cards">
+                <div class="burger-card">
+                    <img src="assets/img/baggy1.avif" alt="Pantalon Baggy 1" class="burger-img">
+                    <h3>Urban Baggy Denim</h3>
+                    <p>Corte ancho tipo noventero con gran comodidad.</p>
+                    <span class="price">L. 1,603.39</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(17, 'Urban Baggy Denim', 1603.39)">Agregar al carrito</button>
+                </div>
+
+
+                <div class="burger-card">
+                    <img src="assets/img/baggy2.avif" alt="Pantalon Baggy 2" class="burger-img">
+                    <h3>Tactical Cargo Pants</h3>
+                    <p>Multiples bolsillos funcionales y ajuste en tobillo.</p>
+                    <span class="price">L. 1,737.01</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(18, 'Tactical Cargo Pants', 1737.01)">Agregar al carrito</button>
+                </div>
+
+
+                <div class="burger-card">
+                    <img src="assets/img/baggy3.avif" alt="Pantalon Baggy 3" class="burger-img">
+                    <h3>Streetwear Utility</h3>
+                    <p>Resistentes, flexibles y con diseno urbano puro.</p>
+                    <span class="price">L. 1,549.94</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(19, 'Streetwear Utility', 1549.94)">Agregar al carrito</button>
+                </div>
+
+
+                <div class="burger-card">
+                    <img src="assets/img/baggy4.avif" alt="Pantalon Baggy 4" class="burger-img">
+                    <h3>Dark Loose Pants</h3>
+                    <p>Silueta holgada ideal para combinar con sneakers.</p>
+                    <span class="price">L. 1,656.84</span>
+                    <button class="btn btn-small" onclick="agregarAlCarrito(20, 'Dark Loose Pants', 1656.84)">Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de valores de la marca -->
+        <section id="features-acerca" class="features">
+            <h2 class="section-title">¿Por que elegirnos?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Calidad Premium</h3>
+                    <p>Utilizamos solo las telas mas resistentes y comodas.</p>
+                </div>
+
+
+                <div class="feature-item">
+                    <i class="fas fa-fire"></i>
+                    <h3>Estilo Unico</h3>
+                    <p>Nuestros disenos exclusivos te brindaran una gran presencia.</p>
+                </div>
+
+
+                <div class="feature-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Entrega Rapida</h3>
+                    <p>Disfruta de tus prendas en la comodidad de tu hogar.</p>
+                </div>
+
+
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Compra Segura</h3>
+                    <p>Garantia de satisfaccion y cambios en todas tus compras.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal del carrito de compras y formulario de pago visual -->
+    <div id="modal-carrito" class="modal-overlay oculto">
+        <div class="modal-box">
+            <h2>Tu Carrito de Compras</h2>
+            <div id="lista-carrito">
+
+                <!-- Se cargan los articulos de forma dinamica con js -->
+            </div>
+            <p class="cart-total-text"><strong>Total: L. <span id="total-carrito">0.00</span></strong></p>
+
+            <h3>Datos de Envio y Pago</h3>
+            <form id="form-pago" onsubmit="procesarPago(event)">
+                <input type="text" class="modal-input" required placeholder="Nombre completo">
+                <input type="text" class="modal-input" required placeholder="Direccion exacta">
+                <input type="text" class="modal-input" required placeholder="Numero de cuenta o tarjeta (Simulado)">
+                <button type="submit" class="btn-modal-pay">Ir a pagar</button>
+            </form>
+
+            <button onclick="cerrarCarrito()" class="btn-modal-close">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Modal de alerta para la pagina de pruebas -->
+    <div id="modal-alerta" class="modal-overlay oculto">
+        <div class="modal-box alert-box-content">
+            <h3>Aviso del Sistema</h3>
+            <p>Esta es una pagina de pruebas. Aun no tenemos esta opcion habilitada, por lo que el pago no se proceso.</p>
+            <button onclick="cerrarAlerta()" class="btn-modal-close">Entendido</button>
+        </div>
+    </div>
+
+    <!-- Pie de pagina -->
+    <footer id="contactanos">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FMS URBAN</h3>
+                <p>La calle habla, nosotros vestimos.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces rapidos</h3>
+                <ul>
+                    <li><a href="#sneakers">Tenis</a></li>
+                    <li><a href="#camisas">Camisas</a></li>
+                    <li><a href="#sueteres">Sueteres</a></li>
+                    <li><a href="#busos">Busos</a></li>
+                    <li><a href="#pantalones">Pantalones</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-section">
+                <h3>Siguenos</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/marvin.guzman.96387189/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/fms_urban_hn?igsh=ZXdkcHl3eDRpOWlv"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.threads.com/@fms_urban_hn"><i class="fas fa-at"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 FMS URBAN. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Archivo JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
